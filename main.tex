@@ -129,7 +129,7 @@
 %% Note: \begin{abstract}...\end{abstract} environment must come
 %% before \maketitle command
 \begin{abstract}
-Text of abstract \ldots.
+  \input{abstract}
 \end{abstract}
 
 
@@ -167,10 +167,10 @@ Text of abstract \ldots.
 \maketitle
 
 
-\section{Introduction}
-
-Text of paper \ldots
-
+\input{macros}
+\input{introduction}
+\input{idea}
+\input{discussion}
 
 %% Acknowledgments
 \begin{acks}                            %% acks environment is optional
@@ -191,13 +191,12 @@ Text of paper \ldots
 
 
 %% Bibliography
-%\bibliography{bibfile}
+\bibliography{references}
 
 
 %% Appendix
 \appendix
-\section{Appendix}
 
-Text of appendix \ldots
+\input{appendix}
 
 \end{document}
